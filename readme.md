@@ -1,6 +1,3 @@
-# 📚 EcoReaders 📚
-
-
 # 🚀Para probar la API sigue los siguientes pasos
 
 ### 1️⃣Clona el repositorio👇
@@ -18,7 +15,6 @@
 ```
 
 ### 3️⃣Configura las variables de entorno en el directorio raiz del proyecto👇
-
 
 ### 4️⃣Inicia el servidor👇
 
