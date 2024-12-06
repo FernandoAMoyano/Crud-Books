@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: client/Dockerfile
+    container_name: eco_readers_front
+    ports:
+      - '80:80' # Nginx sirve el frontend en el puerto 80
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - backend
+    networks:
+      - eco-network # Conexión a la red compartida
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: eco_readers_back
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env
+    volumes:
+      #- .:/app
+      - /app/node_modules
+    depends_on:
+      - db
+    networks:
+      - eco-network # Conexión a la red compartida
+
+  db:
+    image: mysql:8.0
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - '3307:3306' # MySQL expuesto en el puerto 3307 en la máquina
+    volumes:
+      - mysql_data:/var/lib/mysql # Habilitar persistencia de datos
+      - ./src/db/init.sql:/docker-entrypoint-initdb.d/init.sql # Script de inicialización
+    networks:
+      - eco-network # Conexión a la red compartida
+
+networks:
+  eco-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
+    driver: local # Volumen local para persistencia de la base de datos

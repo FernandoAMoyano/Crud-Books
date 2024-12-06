@@ -1,0 +1,211 @@
+---------------------------------------------------------------
+LIBROS USUARIO 1
+---------------------------------------------------------------
+
+Usuario1
+usuario1
+usuario1@example.com
+
+---------------------------------1-------------------------------------
+
+{
+  "title": "El extranjero",
+  "author": "Albert Camus",
+  "description": "La novela sigue la vida de un hombre llamado Meursault, quien muestra una apatía casi total hacia la vida y los eventos que lo rodean. Su actitud indiferente lo lleva a situaciones difíciles y a un enfrentamiento con la sociedad.",
+  "price": 1.600,75,
+  "image":"https://www.normaeditorial.com/upload/media/albumes/0001/05/thumb_4512_albumes_big.jpeg",
+  "bookCondition": "New",
+  "category": "Fiction",
+  "publisherId": "550e8400-e29b-41d4-a716-446655440002",
+  "status": "Available"
+}
+
+-----------------------------------2------------------------------------
+
+{
+  "title": "El principito",
+  "author": "Antoine de Saint-Exupéry",
+  "description": "El principito es un cuento filosófico que narra la historia de un joven príncipe que viaja de planeta en planeta, encontrando personajes singulares y reflexionando sobre el amor, la amistad y la vida.",
+  "price": 1.200,99
+  "image": "https://images.cdn2.buscalibre.com/fit-in/360x360/1a/d0/1ad00b45cfb9ee36f629b922d55ced81.jpg",
+  "bookCondition": "New",
+  "category": "Fiction",
+  "publisherId": "550e8400-e29b-41d4-a716-446655440004",
+  "status": "Available"
+}
+
+-------------------------------------3-----------------------------------
+
+{
+  "title": "Crónica de una muerte anunciada",
+  "author": "Gabriel García Márquez",
+  "description": "La novela narra la historia de un asesinato anunciado en un pequeño pueblo caribeño. A través de una serie de relatos entrelazados, el autor explora temas como el honor, la superstición y la inevitabilidad del destino.",
+  "price": 14.99,
+  "image" : "https://images.cdn2.buscalibre.com/fit-in/360x360/13/97/1397a4f28df5ed21f99177884f3276bd.jpg",
+  "bookCondition": "New",
+  "category": "Fiction",
+  "publisherId": "550e8400-e29b-41d4-a716-446655440003",
+  "status": "Available"
+}
+
+
+  -------------------------------------4------------------------------------
+
+  {
+    "title": "La tregua",
+    "author": "Mario Benedetti",
+    "description": "Una novela sobre la vida de un oficinista en Montevideo que encuentra el amor en su compañera de trabajo, pero las circunstancias le deparan un destino inesperado.",
+    "price": 15.75,
+    "image":"https://images.cdn1.buscalibre.com/fit-in/360x360/0b/3b/0b3b5778165bc3dad053eac37ee0ebb7.jpg",
+    "bookCondition": "New",
+    "category": "Fiction",
+    "publisherId": "550e8400-e29b-41d4-a716-446655440003",
+    "status": "Available"
+  },
+
+  ------------------------------------5-----------------------------------
+
+  {
+    "title": "Como agua para chocolate",
+    "author": "Laura Esquivel",
+    "description": "Una novela de realismo mágico que narra la vida de Tita, cuya fuerte conexión emocional con la comida provoca efectos sobrenaturales.",
+    "price": 16.50,
+    "image": "https://images.cdn2.buscalibre.com/fit-in/360x360/36/d0/36d09cc5a34cd172a8ab97261f0e142b.jpg",
+    "bookCondition": "New",
+    "category": "Fiction",
+    "publisherId": "550e8400-e29b-41d4-a716-446655440004",
+    "status": "Available"
+  },
+
+  
+---------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+LIBROS USUARIO 2
+------------------------------------------------------------------------------
+
+Usuario2
+usuario2
+usuario2@example.com
+
+-----------------------------1------------------------------------
+
+
+{
+  "title": "Rayuela",
+  "author": "Julio Cortázar",
+  "description": "Esta novela experimental sigue la historia de Horacio Oliveira, un argentino que vive en París y está obsesionado con su amante, La Maga. La narrativa no lineal y los capítulos dispuestos en un orden no tradicional desafían al lector a participar activamente en la construcción del significado de la historia.",
+  "price": 19.50,
+  "image": "https://acdn.mitiendanube.com/stores/001/029/689/products/rayuela1-70d4301f60dc01384c16171187155984-640-0.png",
+  "bookCondition": "New",
+  "category": "Fiction",
+  "publisherId": "550e8400-e29b-41d4-a716-446655440004",
+  "status": "Available"
+}
+
+-------------------------------2------------------------------------
+
+{
+  "title": "Pedro Páramo",
+  "author": "Juan Rulfo",
+  "description": "Esta novela es una obra maestra del realismo mágico mexicano. Narra la historia de Juan Preciado, quien viaja a Comala en busca de su padre, Pedro Páramo, y descubre un mundo misterioso poblado por fantasmas y recuerdos.",
+  "price": 20.00,
+  "image": "https://static.cegal.es/imagenes/marcadas/9788417/978841704721.gif",
+  "bookCondition": "New",
+  "category": "Fiction Literary",
+  "publisherId": "550e8400-e29b-41d4-a716-446655440002",
+  "status": "Available"
+}
+
+---------------------------------3-------------------------------
+
+{
+  "title": "La ciudad y los perros",
+  "author": "Mario Vargas Llosa",
+  "description": "Esta novela peruana es una exploración profunda de la vida en una academia militar en Lima, donde los personajes enfrentan la violencia, la corrupción y el poder. Es una obra clave en la literatura latinoamericana contemporánea.",
+  "price": 18.00,
+  "image":  "https://www.penguinlibros.com/ar/2701719/la-ciudad-y-los-perros.jpg",
+  "bookCondition": "New",
+  "category": "Fiction Literary",
+  "publisherId": "550e8400-e29b-41d4-a716-446655440002",
+  "status": "Available"
+}
+--------------------------------4----------------------------------
+ {
+    "title": "Ficciones",
+    "author": "Jorge Luis Borges",
+    "description": "Una colección de cuentos cortos que exploran conceptos filosóficos y metafísicos a través de narrativas complejas y a menudo sorprendentes.",
+    "price": 19.00,
+    "image": "https://images.cdn3.buscalibre.com/fit-in/360x360/46/85/4685286dbc1ec2013245afe1d537acfb.jpg",
+    "bookCondition": "New",
+    "category": "Fiction",
+    "publisherId": "550e8400-e29b-41d4-a716-446655440005",
+    "status": "Available"
+  },
+
+  ----------------------------5------------------------------------
+
+{
+    "title": "La fiesta del chivo",
+    "author": "Mario Vargas Llosa",
+    "description": "Una novela histórica que explora la dictadura de Rafael Leónidas Trujillo en la República Dominicana, desde múltiples perspectivas.",
+    "price": 21.25,
+    "image": "https://images.cdn2.buscalibre.com/fit-in/360x360/eb/f3/ebf312ad01be9e04367852a8203a83f3.jpg",
+    "bookCondition": "New",
+    "category": "Fiction",
+    "publisherId": "550e8400-e29b-41d4-a716-446655440006",
+    "status": "Available"
+  }
+
+
+
+-----------------------------------------------------------------------------
+LIBROS USUARIO 3
+-----------------------------------------------------------------------------
+
+Usuario3
+usuario3
+usuario3@example.com
+
+----------------------------------1-----------------------------------
+{
+  "title": "Los pasos perdidos",
+  "author": "Alejo Carpentier",
+  "description": "Esta novela sigue a un etnólogo que viaja a la selva amazónica en busca de una tribu perdida. A lo largo del viaje, reflexiona sobre la naturaleza humana y el paso del tiempo.",
+  "price": 19.50,
+  "image": "https://images.cdn3.buscalibre.com/fit-in/360x360/8c/2c/8c2cc018ebfa1aa84f59a7626f4a0c56.jpg",
+  "bookCondition": "New",
+  "category": "Fiction Literary",
+  "publisherId": "550e8400-e29b-41d4-a716-446655440002",
+  "status": "Available"
+}
+
+------------------------------------2------------------------------------
+
+{
+  "title": "Doña Bárbara",
+  "author": "Rómulo Gallegos",
+  "description": "Esta novela venezolana es un clásico de la literatura latinoamericana. Narra la historia de la lucha entre la civilización y la barbarie en los llanos venezolanos, a través de los conflictos entre la protagonista, Doña Bárbara, y el protagonista masculino, Santos Luzardo.",
+  "price": 17.75,
+  "image" : "https://adriw.com/wp-content/uploads/2020/02/do%C3%B1a-barbara-libro-17.jpg",
+  "bookCondition": "New",
+  "category": "Fiction Literary",
+  "publisherId": "550e8400-e29b-41d4-a716-446655440002",
+  "status": "Available"
+}
+
+--------------------------------------3-----------------------------------------
+
+{
+  "title": "La casa de los espíritus",
+  "author": "Isabel Allende",
+  "description": "Esta novela chilena es una saga familiar que abarca varias generaciones y explora temas como el amor, la política y la magia. Es una obra emblemática de la literatura latinoamericana contemporánea.",
+  "price": 21.99,
+  "image": "https://www.memoriachilena.gob.cl/602/articles-65106_thumbnail.jpg",
+  "bookCondition": "New",
+  "category": "Fiction Literary",
+  "publisherId": "550e8400-e29b-41d4-a716-446655440002",
+  "status": "Available"
+}

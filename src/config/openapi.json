@@ -1,0 +1,249 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Swagger Petstore - OpenAPI 3.0",
+    "description": "Esta es una aplicacion para el intercambio de libros usados\n\n\n Some useful links:\n - [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)\n - [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "email": "apiteam@swagger.io"
+    },
+    "version": "1.0.0"
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  },
+  "servers": [
+    {
+      "url": "https://petstore3.swagger.io/api/v3"
+    }
+  ],
+  "paths": {
+    "/books/{bookId}": {
+      "patch": {
+        "tags": [
+          "book"
+        ],
+        "summary": "Actualizar un libro existente",
+        "description": "Actualizar un libro existente por id",
+        "operationId": "updateBook",
+        "parameters": [
+          {
+            "name": "bookId",
+            "in": "path",
+            "description": "id del libro a actualizar",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Update an existent pet in the store",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Book"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Operación exitosa",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RowDataPacket"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "id no valido"
+          },
+          "404": {
+            "description": "Libro no encontrado"
+          },
+          "422": {
+            "description": "Excepción de validación"
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": [
+              "write:pets",
+              "read:pets"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BookStatus": {
+        "type": "string",
+        "enum": [
+          "Available",
+          "Sold",
+          "Reserved"
+        ]
+      },
+      "BookCondition": {
+        "type": "string",
+        "enum": [
+          "new",
+          "Like new",
+          "Lined"
+        ]
+      },
+      "Category": {
+        "type": "string",
+        "enum": [
+          "Fiction",
+          "No Fiction",
+          "Mistery",
+          "Adventure",
+          "Romance",
+          "Science Fiction",
+          "Fancy",
+          "Biography",
+          "History",
+          "Terror",
+          "Sport",
+          "Other"
+        ]
+      },
+      "Book": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "example": 10
+          },
+          "title": {
+            "type": "string",
+            "example": "100 años de soledad"
+          },
+          "description": {
+            "type": "string",
+            "example": "Novela"
+          },
+          "author": {
+            "type": "string",
+            "example": "Gabriel Garcia Marquez"
+          },
+          "price": {
+            "type": "number",
+            "example": 57
+          },
+          "bookCondition": {
+            "$ref": "#/components/schemas/BookCondition"
+          },
+          "category": {
+            "$ref": "#/components/schemas/Category"
+          },
+          "sellerId": {
+            "type": "number",
+            "example": 8
+          },
+          "status": {
+            "$ref": "#/components/schemas/BookStatus"
+          },
+          "isbn": {
+            "type": "string"
+          }
+        }
+      },
+      "User": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": "xxxxxxxxxxxxxxxxxxxxx"
+          },
+          "username": {
+            "type": "number",
+            "example": "Fernando"
+          },
+          "email": {
+            "type": "number",
+            "example": "fernandomoyano21@gmail.com"
+          },
+          "password": {
+            "type": "string",
+            "example": "xxxxxxxxxxxxxxxxxxxxxxx"
+          }
+        }
+      },
+      "RowDataPacket": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/Book"
+        }
+      },
+      "ApiResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "requestBodies": {
+      "Book": {
+        "description": "Objeto Libro que se agregara",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Book"
+            }
+          }
+        }
+      },
+      "UserArray": {
+        "description": "List of user object",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "petstore_auth": {
+        "type": "oauth2",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "https://petstore3.swagger.io/oauth/authorize",
+            "scopes": {
+              "write:pets": "modify pets in your account",
+              "read:pets": "read your pets"
+            }
+          }
+        }
+      },
+      "api_key": {
+        "type": "apiKey",
+        "name": "api_key",
+        "in": "header"
+      }
+    }
+  }
+}
